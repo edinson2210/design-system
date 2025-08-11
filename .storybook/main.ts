@@ -17,5 +17,13 @@ const config: StorybookConfig = {
     check: false,
     reactDocgen: "react-docgen-typescript",
   },
+  // Configuración para build estático
+  staticDirs: ["../public"],
+  // Configuración para GitHub Pages - CORREGIDO
+  managerHead: (entry) =>
+    typeof entry === "string"
+      ? entry + '<meta name="robots" content="noindex">'
+      : '<meta name="robots" content="noindex">',
 };
+
 export default config;
