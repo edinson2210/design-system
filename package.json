@@ -24,8 +24,8 @@
     "clean": "rm -rf dist",
     "test": "echo \"No hay tests por ahora\"",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "deploy:storybook": "npm run build:storybook && touch storybook-static/.nojekyll"
+    "build-storybook": "storybook build -o docs",
+    "deploy-storybook": "npm run build-storybook && touch docs/.nojekyll"
   },
   "keywords": [
     "design-system",
