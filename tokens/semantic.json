@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tokens.studio/schemas/1.0.0/tokens.schema.json",
+  "color": {
+    "bg": { "value": "{colors.base.white.value}" },
+    "fg": { "value": "{colors.neutral.900.value}" },
+    "muted": { "value": "{colors.neutral.600.value}" },
+    "border": { "value": "{colors.neutral.200.value}" },
+    "brand": {
+      "default": { "value": "{colors.primary.600.value}" },
+      "hover": { "value": "{colors.primary.700.value}" },
+      "fg": { "value": "{colors.base.white.value}" }
+    },
+    "success": { "value": "{colors.success.500.value}" },
+    "warning": { "value": "{colors.warning.500.value}" },
+    "error": { "value": "{colors.error.500.value}" }
+  },
+  "text": {
+    "body": {
+      "fontFamily": { "value": "{typography.fontFamily.sans.value}" },
+      "fontSize": { "value": "{typography.fontSize.md.value}" },
+      "lineHeight": { "value": "{typography.lineHeight.normal.value}" }
+    },
+    "label": {
+      "fontWeight": { "value": "{typography.fontWeight.semibold.value}" }
+    }
+  },
+  "radius": {
+    "control": { "value": "{radii.md.value}" }
+  },
+  "space": {
+    "controlY": { "value": "{spacing.3.value}" },
+    "controlX": { "value": "{spacing.4.value}" }
+  },
+  "shadow": {
+    "elevation1": { "value": "{shadows.sm.value}" }
+  }
+}
+

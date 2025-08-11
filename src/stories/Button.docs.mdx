@@ -1,0 +1,34 @@
+import {
+  Meta,
+  Title,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Canvas,
+} from "@storybook/addon-docs/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+<Title>Button</Title>
+
+<Description>
+  El Button es un control de acción con múltiples variantes, tamaños, radios y
+  estados. Soporta modo polymorphic (`as`).
+</Description>
+
+<Primary />
+
+## Props y controles
+
+<Controls />
+
+## Ejemplos rápidos
+
+<Canvas of={ButtonStories.VariantsGrid} />
+<Canvas of={ButtonStories.Sizes} />
+<Canvas of={ButtonStories.Radius} />
+<Canvas of={ButtonStories.AsLink} />
+<Canvas of={ButtonStories.Loading} />
+<Canvas of={ButtonStories.IconOnly} />

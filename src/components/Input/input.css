@@ -1,0 +1,120 @@
+.ds-input-field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--color-fg);
+}
+.ds-input-field--full {
+  width: 100%;
+}
+.ds-input-label {
+  font-weight: var(--label-weight);
+  font-size: 0.875rem;
+}
+.ds-input-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+}
+.ds-input-field--full .ds-input-wrapper {
+  width: 100%;
+}
+
+.ds-input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease,
+    background-color 120ms ease;
+}
+.ds-input:focus-visible {
+  border-color: var(--palette-primary);
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--palette-primary) 20%, transparent);
+}
+
+.ds-input--sm {
+  padding: 6px 10px;
+  font-size: var(--button-size-sm);
+}
+.ds-input--md {
+  padding: 10px 12px;
+  font-size: var(--button-size-md);
+}
+.ds-input--lg {
+  padding: 12px 14px;
+  font-size: var(--button-size-lg);
+}
+
+.ds-input--radius-none {
+  border-radius: var(--radius-none);
+}
+.ds-input--radius-sm {
+  border-radius: var(--radius-sm);
+}
+.ds-input--radius-md {
+  border-radius: var(--radius-md);
+}
+.ds-input--radius-lg {
+  border-radius: var(--radius-lg);
+}
+.ds-input--radius-full {
+  border-radius: var(--radius-full);
+}
+
+.ds-input--full {
+  width: 100%;
+}
+.ds-input--invalid {
+  border-color: var(--palette-danger);
+}
+.ds-input--invalid:focus-visible {
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--palette-danger) 20%, transparent);
+}
+.ds-input--success {
+  border-color: var(--palette-success);
+}
+.ds-input--success:focus-visible {
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--palette-success) 20%, transparent);
+}
+.ds-input--disabled,
+.ds-input:disabled {
+  background: var(--neutral-100);
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+.ds-input-icon {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-muted);
+}
+.ds-input-icon--start {
+  left: 8px;
+}
+.ds-input-icon--end {
+  right: 8px;
+}
+.ds-input-icon + .ds-input {
+  padding-left: 32px;
+}
+.ds-input + .ds-input-icon {
+  pointer-events: none;
+}
+.ds-input-helper {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+.ds-input-helper.is-error {
+  color: var(--palette-danger);
+}
+.ds-input-helper.is-success {
+  color: var(--palette-success);
+}

@@ -1,0 +1,27 @@
+import {
+  Meta,
+  Title,
+  Description,
+  Primary,
+  Controls,
+  Canvas,
+} from "@storybook/addon-docs/blocks";
+import * as InputStories from "./Input.stories";
+
+<Meta of={InputStories} />
+
+<Title>Input</Title>
+<Description>
+  Campo de entrada con estados de validación, tamaños, radios y soporte de
+  íconos.
+</Description>
+
+<Primary />
+<Controls />
+
+## Estados y tamaños
+
+<Canvas of={InputStories.HelperError} />
+<Canvas of={InputStories.HelperSuccess} />
+<Canvas of={InputStories.Sizes} />
+<Canvas of={InputStories.WithIcons} />

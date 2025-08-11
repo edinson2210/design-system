@@ -1,0 +1,26 @@
+import {
+  Meta,
+  Title,
+  Description,
+  Primary,
+  Controls,
+  Canvas,
+} from "@storybook/addon-docs/blocks";
+import * as CardStories from "./Card.stories";
+
+<Meta of={CardStories} />
+
+<Title>Card</Title>
+<Description>
+  Contenedor de contenido con variantes elevated, outlined y ghost. Soporta
+  radios, paddings e interacción.
+</Description>
+
+<Primary />
+<Controls />
+
+## Galería
+
+<Canvas of={CardStories.Layouts} />
+<Canvas of={CardStories.Interactive} />
+<Canvas of={CardStories.VariantsGrid} />
